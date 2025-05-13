@@ -1,8 +1,8 @@
-##Leo: The Personal Voice Assistant
+## Leo: The Personal Voice Assistant
 
 Leo is an advanced Python-based AI voice assistant designed to help users streamline tasks, automate workflows, and access quick responses by voice commands. Created with a modular structure, Leo offers an extensive range of features, including web searches, system management, real-time data, and personalized reminders, making it a versatile and customizable assistant for everyday use.
 
-#Features
+# Features
 
 Leo is packed with various functionalities to cover a wide range of tasks:
 
@@ -12,7 +12,8 @@ Real-Time Information: Get the current time, weather in Bhubaneswar, and check i
 Interactive Features: Play games like Rock-Paper-Scissors, manage personal reminders, and recall saved information.
 Media Controls: Control YouTube playback, set volume levels, and adjust playback speed.
 Additional Capabilities: Hotword detection ("Leo"), voice output at each interaction, Google translation, scheduling, GUI options, and more.
-#Modules
+
+# Modules
 Leo’s code is structured into modules, each dedicated to a specific function, making the assistant flexible and easy to extend.
 
 Module	Description
@@ -29,7 +30,7 @@ game.py	- Plays Rock-Paper-Scissors with the user.
 shutdown.py	- Provides a command to shut down the system.
 Each module can be easily modified or extended to add more functionalities as needed.
 
-#Requirements
+# Requirements
 
 Leo requires the following Python packages:
 
@@ -46,7 +47,7 @@ BeautifulSoup	      -Parses HTML/XML documents for web scraping.
 os	                -Interacts with the operating system (file handling).
 
 
-Usage
+# Usage
 
 After starting Leo, you can use voice commands to interact with the assistant. Here are some example commands:
 
