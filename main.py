@@ -11,7 +11,6 @@ from game import play_game
 from volume import decrease_volume, increase_volume
 from internet_speed import check_internet_speed
 from shutdown import shutdown_system
-
 import pyttsx3
 import speech_recognition as sr
 
@@ -63,8 +62,9 @@ def display_menu():
 
 if __name__ == "__main__":
     greet_user()
-    display_menu()
     conversation()
+    display_menu()
+
     while True:
         query = listen().lower()
 
@@ -74,16 +74,16 @@ if __name__ == "__main__":
 
         try:
             # Web search commands
-            if "search" in query:
-                if "google" in query:
-                    q = query.replace("search google", "").strip()
-                    google_search(q)
-                elif "youtube" in query:
-                    q = query.replace("search youtube", "").strip()
-                    youtube_search(q)
-                else:
-                    q = query.replace("search", "").strip()
-                    web_search(q)
+
+            if "google" in query:
+                q = query.replace("search google", "").strip()
+                google_search(q)
+            elif "youtube" in query:
+                q = query.replace("search youtube", "").strip()
+                youtube_search(q)
+            elif "wikipedia" in query:
+                q = query.replace("search", "").strip()
+                web_search(q)
 
             # System time check
             elif "time" in query:

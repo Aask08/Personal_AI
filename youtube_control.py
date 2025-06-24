@@ -3,22 +3,22 @@ from core_utils import speak
 import time
 
 def play_pause():
-    """Toggle play/pause on YouTube video."""
-    pyautogui.press("k")  # 'k' is the shortcut for play/pause on YouTube
+
+    pyautogui.press("k")
     speak("Playback toggled.")
 
 def forward():
-    """Skip forward 10 seconds on YouTube video."""
-    pyautogui.press("l")  # 'l' skips forward by 10 seconds
+
+    pyautogui.press("l")
     speak("Skipped forward.")
 
 def backward():
-    """Skip backward 10 seconds on YouTube video."""
-    pyautogui.press("j")  # 'j' skips backward by 10 seconds
+
+    pyautogui.press("j")
     speak("Skipped backward.")
 
 def set_volume(level):
-    """Set volume to a specific level (0 to 100)."""
+
     if level < 0 or level > 100:
         speak("Volume level should be between 0 and 100.")
         return

@@ -3,7 +3,6 @@ from core_utils import speak
 from core_utils import listen
 
 def shutdown_system():
-    """Shut down the computer."""
     speak("Are you sure you want to shut down the system? Please confirm.")
     confirmation = listen()
     if "yes" in confirmation or "confirm" in confirmation:

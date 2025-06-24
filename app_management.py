@@ -15,7 +15,7 @@ app_commands = {
 }
 
 def open_app(app_name):
-    """Open an application based on the app name."""
+
     command = app_commands.get(app_name.lower())
     if command:
         os.system(command)
@@ -24,7 +24,7 @@ def open_app(app_name):
         speak(f"Sorry, I don't know how to open {app_name}.")
 
 def close_app(app_name):
-    """Close an application based on the app name."""
+
     command = app_commands.get(app_name.lower())
     if command:
         os.system(f"taskkill /f /im {command}.exe")

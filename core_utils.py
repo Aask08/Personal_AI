@@ -12,12 +12,11 @@ engine.setProperty('voice', voices[1].id)  # Choose a female voice; change index
 engine.setProperty('rate', voice_rate)  # Set the rate of speech
 
 def speak(text):
-    """Convert text to speech."""
     engine.say(text)
     engine.runAndWait()
 
 def listen():
-    """Capture audio and convert it to text."""
+
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
@@ -34,10 +33,3 @@ def listen():
             speak("There was an error with the recognition service.")
             return ""
 
-def detect_hotword(hotword="leo"):
-    """Continuously listen and activate upon hearing the hotword."""
-    while True:
-        command = listen()
-        if hotword in command:
-            speak("Yes, I'm listening.")
-            return True
